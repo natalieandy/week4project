@@ -1,1 +1,10 @@
-
+<audio id="symphony"></audio>
+<button onclick="play('trumpaudio.mp3')">Incorrect</button>
+<button onclick="play('hooray.wav')">Correct</button>
+<script>
+    function play(sound){
+    var audio = document.getElementById("symphony");
+    audio.setAttribute('src', sound);
+    audio.play();
+}
+</script>
