@@ -1,15 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!--Google font family link: -->
+  <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+<style>
+  h1 {
+    font-family: 'Grandstander', cursive;
+    color: #F57484;
+    display: block;
+    font-size: 54px;
+    top: 6%;
+    left: 648px;
+    transform: translate(-50%, -50%);
+    position: relative;
+    z-index: 5;
+  }
+  .trivia {
+    display: flex;
+    position: relative;
+    z-index: 3;
+    width: 932px;
+    top: -93px;
+    justify-content: center;
+    left: 10px;
+  }
+  .container {
+    z-index: 2;
+    top: 41px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+  }
+  .container2 {
+    top: -139px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-content: center;
+  }
+  .malenacard {
+    position: absolute;
+    float: left;
+    margin-left: 13%;
+    margin-right: 73%;
+    top: 32px;
+  }
+  .jessecard {
+    position: absolute;
+    float: left;
+    margin-left: 39%;
+    margin-right: 50%;
+    top: 32px;
+    justify-content: center;
+  }
+  .terracard {
+    position: absolute;
+    float: left;
+    margin-left: 64%;
+    margin-right: 53%;
+    top: 32px;
+  }
+  .malenatext span {
+    font-family: 'Grandstander', cursive;
+    position: absolute;
+    color: white;
+    font-size: 36px;
+    left: 233px;
+    top: 523px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .malenatext:hover span {
+    text-shadow: 0 0 10px #F57484;
+  }
+  .jessetext span {
+    font-family: 'Grandstander', cursive;
+    color: white;
+    font-size: 36px;
+    left: 226px;
+    top: 523px;
+    position: absolute;
+  }
+  .jessetext:hover span {
+    text-shadow: 0 0 10px #9959B2;
+  }
+  .terratext span {
+    font-family: 'Grandstander', cursive;
+    position: absolute;
+    color: white;
+    font-size: 36px;
+    left: 222px;
+    top: 523px;
+  }
+  .terratext:hover span {
+    text-shadow: 0 0 10px #00C2CB;
+  }
+  .container3 {
+    position: relative;
+  }
+  h5 {
+    font-family: 'Grandstander', cursive;
+    position: relative;
+    color: #F57484;
+    font-size: 54px;
+    top: 533px;
+    display: flex;
+    justify-content: center;
+    left: 28px;
+  }
+</style>
+  <title>Trivia</title>
 </head>
 <body>
-    <h1>Terra Trivia</h1>
-    <div id="quiz"></div>
-<button id="submit">Get Results</button>
-<div id="results"></div>
-<script src="script.js"></script>
+<!--"Gameday Trivia" Title-->
+    <div class="container">
+        <div class="container4">
+          <h1>GAMEDAY</h1>
+          <img src="trivia.png" alt="trivia" class="trivia">
+        </div>
+    </div>
+
+<!--Category cards-->
+<div class="container2">
+    <div class="malenacard">
+        <button class="malenacard"><a href="#"><img src="malenacard.png" alt="malenacard" class="malenacard"></a></button>
+          <button class="malenatext"><a href="#"><span>MALENA</span></a></button>
+    </div>
+    <div class="jessecard">
+        <button class="jessecard"><a href="#"><img src="jessecard.png" alt="jessecard" class="jessecard"></a></button>
+          <button class="jessetext"><a href="#"><span>JESSE</span></a></button>
+    </div>
+    <div class="terracard">
+      <button class="terracard"><a href="#"><img src="terracard.png" alt="terracard" class="terracard"></a></button>
+      <button class="terratext"><a href="#"><span>TERRA</span></a></button>
+    </div>
+</div>
+
+<!--Pick a category text:-->
+<div class="container3">
+  <h5> 😈     PICK A CATEGORY     😈 </h5>
+</div>
+<!--Text buttons-->
 </body>
 </html>

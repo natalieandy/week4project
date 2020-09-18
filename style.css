@@ -1,0 +1,26 @@
+h1 {
+  font-family: 'Grandstander', cursive;
+  color: #F57484;
+  display: block;
+  font-size: 54px;
+  top: 6%;
+  left: 897px;
+  transform: translate(-50%, -50%);
+  position: relative;
+  z-index: 5;
+}
+.trivia {
+  display: block;
+  left: 30%;
+  position: relative;
+  z-index: 3;
+  width: 932px;
+  top: -93px;;
+}
+.container {
+  z-index: 2;
+  top: 41px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
